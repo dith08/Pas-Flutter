@@ -10,7 +10,8 @@ class FavoriteView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tim Favorit Saya'),
+        title: Text('Tim Favorit Saya', style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.blue,
       ),
       body: FutureBuilder<List<FavoriteTeam>>(
         future: DatabaseHelper.instance.getAllFavorites(),

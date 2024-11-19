@@ -12,7 +12,8 @@ class TeamView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Daftar Team'),
+        title: Text('Daftar Team', style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.blue,
       ),
       body: Obx(() {
         if (teamController.isLoading.value) {
