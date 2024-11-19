@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../widget/reusable/textfield.dart';
-import 'apilogin_controller.dart';
+import 'login_controller.dart';
+import '../register/register_view.dart';
 
 class LoginView extends StatelessWidget {
   final ApiloginControllerr apiloginControllerr =
@@ -105,13 +106,13 @@ class LoginView extends StatelessWidget {
               }
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.deepPurple,
+              backgroundColor: Colors.blue[300],
               foregroundColor: Colors.white,
               elevation: 5,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
-              shadowColor: Colors.deepPurple.withOpacity(0.5),
+              shadowColor: Colors.blue[900]?.withOpacity(0.5),
             ),
             child: Text(
               'Login',
@@ -129,14 +130,14 @@ class LoginView extends StatelessWidget {
           height: 55,
           child: OutlinedButton(
             onPressed: () {
-              // Get.to(() => RegisterView());
+              Get.to(() => RegisterView());
             },
             style: OutlinedButton.styleFrom(
-              side: BorderSide(color: Colors.deepPurple, width: 2),
+              side: BorderSide(color: Colors.blue[900]!, width: 2),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
-              foregroundColor: Colors.deepPurple,
+              foregroundColor: Colors.blue[900],
             ),
             child: Text(
               'Register',
